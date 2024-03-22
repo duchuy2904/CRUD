@@ -1,0 +1,16 @@
+table {
+    width: 100%; /* Chiều rộng của bảng */
+    border-collapse: collapse; /* Gộp đường viền của các ô */
+    text-align: center;
+
+}
+
+th, td {
+    border: 1px solid #ddd; /* Đường viền của các ô */
+    padding: 8px; /* Khoảng cách giữa nội dung và viền của các ô */
+    text-align: left; /* Căn lề văn bản của các ô */
+}
+
+th {
+    background-color: #f2f2f2; /* Màu nền của ô header */
+}

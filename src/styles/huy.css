@@ -1,0 +1,19 @@
+.nikita-container {
+    display: flex;
+    padding: 30px 25px;
+    column-gap: 36px;
+}
+
+.nikita-input {
+    font-size: larger;
+}
+
+.nikita-actions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.nikita-btn {
+    font-size: larger;
+}

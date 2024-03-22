@@ -1,0 +1,181 @@
+.greeting-heading {
+  text-align: center;
+  color: #333;
+}
+
+.demo-color,
+.color-form,
+.user-form-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-form-container.loading {
+  opacity: 0.7;
+}
+
+.demo-color {
+  height: 200px;
+  background-color: aliceblue;
+  border: solid 2px gray;
+  border-radius: 5px;
+}
+
+.color-form {
+  margin-top: 2rem;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  border: none;
+  padding: 0;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+
+.input-wrapper:has(.hex-input) label {
+  color: red;
+}
+
+.input-wrapper:has(.rgb-input) label {
+  color: green;
+}
+
+.color-input {
+  flex: 1;
+  border: solid 1px transparent;
+  outline: none;
+  min-height: 68px;
+  font-size: x-large;
+  padding: 10px 16px 0 16px;
+  border-radius: 5px;
+  transition: border-color 200ms ease-in-out;
+  box-shadow: 5px 5px 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.color-input:hover {
+  border-color: #333;
+}
+
+.hex-input {
+  border-color: red;
+  color: red;
+}
+
+.btn-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.torgb-btn,
+.tohex-btn {
+  outline: none;
+  min-width: 54px;
+  min-height: 37px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  border: solid 1px transparent;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 200ms ease-in-out;
+  box-shadow: 5px 5px 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.torgb-btn:hover,
+.tohex-btn:hover {
+  cursor: pointer;
+  border-color: #333;
+}
+
+.tohex-btn {
+  color: red;
+}
+
+.torgb-btn {
+  color: green;
+}
+
+.rgb-input {
+  border-color: green;
+  color: green;
+}
+
+@media (max-width: 576px) {
+  .color-form {
+    flex-direction: column;
+  }
+}
+
+.spin-infinite {
+  animation: spin 3000ms linear forwards infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-form-inner-wrapper {
+  max-width: 640px;
+  margin: 10px auto;
+  background-color: azure;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.user-form {
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+
+
+.form-row {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
+}
+.gender-group {
+  max-width: 240px;
+  flex: 1;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: space-between;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-btn {
+  min-height: 36px;
+  min-width: 120px;
+  font-size: large;
+}
+
+input {
+  font-size: large;
+}
+
+.text-input {
+  padding: 12px 12px;
+}

@@ -1,0 +1,9 @@
+.root.loading {
+    opacity: 0.7;
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 36px;
+}
